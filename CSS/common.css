@@ -5,6 +5,16 @@ h1
 	color: white;
 }
 
+#noms
+{
+	text-align: right;
+	color: white;
+	margin-top: 0;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
 #en_tête
 {
 	background: url("../Images/entete.jpg") center;
