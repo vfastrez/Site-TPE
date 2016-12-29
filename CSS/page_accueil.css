@@ -1,5 +1,88 @@
 section
 {
+<<<<<<< HEAD
 	background: url("../Images/image_de_fond.jpg");
 	padding-bottom: 20px;
+=======
+	font-size: 0.75em;
+	text-align: right;
+	color: white;
+	margin-top: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+h1
+{
+	text-decoration: underline;
+	text-align: center;
+	color: white;
+}
+
+#en_tête
+{
+	background: url("../Images/entete.jpg") center;
+	height:125px;
+	padding-top: 50px;
+}
+
+body
+{
+	margin: 0;
+}
+
+.orga_nav
+{
+	display: flex;
+	justify-content: center;
+}
+
+.Boutons_nav
+{
+	width: 200px;
+	height : 50px;
+	text-align: center;
+	line-height: 50px;
+	transition: background 0.5s, border-radius 0.5s, box-shadow 0.5s;
+}
+
+.ext:hover
+{
+    background: #b5cbff;
+	box-shadow: inset 0px 0px 21px 0px rgba(0,0,0,0.75);
+	border-radius: 5px;
+}
+
+a
+{
+	
+	text-decoration: none;
+	color: black;
+}
+
+.clef_de_sol
+{
+	width: 200px;
+	height: 300px;
+	margin-left: 80px;
+}
+nav
+{
+	display: flex;
+	justify-content: space-between;
+}
+.div_bouton
+{
+	height: 100px;
+	background: #004aff;
+	box-shadow: 0px 3px 7px black;
+}
+
+.en_cours
+{
+	background: #2e1fff;
+	border-radius: 5px;
+	box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,0.75);
+>>>>>>> origin/master
 }
