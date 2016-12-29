@@ -40,12 +40,12 @@ body
 	height : 50px;
 	text-align: center;
 	line-height: 50px;
+	transition: background 0.5s, border-radius 0.5s, box-shadow 0.5s;
 }
 
-.Boutons_nav:hover
+.ext:hover
 {
-    background: #3030a2;
-	transition-duration: 0.5s;
+    background: #b5cbff;
 	box-shadow: inset 0px 0px 21px 0px rgba(0,0,0,0.75);
 	border-radius: 5px;
 }
@@ -71,6 +71,13 @@ nav
 .div_bouton
 {
 	height: 100px;
-	background: rgb(3, 43, 148);
-	box-shadow: 0px 5px 5px black;
+	background: #004aff;
+	box-shadow: 0px 3px 7px black;
+}
+
+.en_cours
+{
+	background: #2e1fff;
+	border-radius: 5px;
+	box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,0.75);
 }
