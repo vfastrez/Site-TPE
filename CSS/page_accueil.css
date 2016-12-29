@@ -1,5 +1,22 @@
-section
+body
 {
 	background: url("../Images/image_de_fond.jpg");
 	padding-bottom: 20px;
+}
+
+p
+{
+	margin-bottom: 0;
+}
+
+@font-face
+{
+	font-family: 'Sanford';
+	src: url('../Polices/Sanford/Sanford-0103_demo.ttf');
+	src: url('../Polices/Sanford/Sanford-0103_demo.woff');
+}
+
+*
+{
+	font-family: 'Sanford';
 }
