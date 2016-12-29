@@ -18,9 +18,9 @@ h1
 
 #en_tête
 {
-	background: url("../Images/entete.jpg");
-	height:250px;
-	padding-top: 100px;
+	background: url("../Images/entete.jpg") center;
+	height:125px;
+	padding-top: 50px;
 }
 
 body
@@ -66,4 +66,9 @@ nav
 {
 	display: flex;
 	justify-content: space-between;
+}
+.div_bouton
+{
+	height: 100px;
+	background-color: red;
 }
