@@ -1,0 +1,11 @@
+img
+{
+	width:150px;
+	height:150px;
+}
+
+.Orga_Biblio
+{
+	display:flex;
+	border: 2.5px solid red
+}
