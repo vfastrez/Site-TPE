@@ -85,4 +85,23 @@ nav
 	background: #2e1fff;
 	border-radius: 5px;
 	box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,0.75);
+	font-weight: bold;
+}
+
+body
+{
+	background: url("../Images/image_de_fond.jpg");
+	padding-bottom: 20px;
+}
+
+@font-face
+{
+	font-family: 'Sanford';
+	src: url('../Polices/Sanford/Sanford-0103_demo.ttf');
+	src: url('../Polices/Sanford/Sanford-0103_demo.woff');
+}
+
+*
+{
+	font-family: 'Sanford';
 }
