@@ -31,3 +31,16 @@ article
 {
 	margin-left: 20px
 }
+
+#organisation_image
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+#margin_image
+{
+	margin-right: 125px;
+	width:220px;
+	height: 120px;
+}
