@@ -6,11 +6,32 @@
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
 	<title>Site TPE</title>
 	<script type="text/javascript">
-var audioElement = document.createElement('audio');
+var audioElement = document.createElement('audio'), musique = 0;
 audioElement.setAttribute('src', 'Audio/Background.mp3');
 audioElement.setAttribute('loop', '-1');
-audioElement.play();
 audioElement.volume = 0.1;
+
+function swap_musique() {
+	if(musique == 0) {
+		var query = document.getElementById('play');
+		query.id = "pause";
+		audioElement.play();
+		musique = 1;
+		document.getElementById('texte_musique').innerHTML = 'arrêter la musique';
+		query.style.transitionDuration = "0.4s";
+
+	}
+	else {
+		var query = document.getElementById('pause');
+		query.id = "play";
+		audioElement.pause();
+		musique = 0;
+		audioElement.currentTime=0;
+		document.getElementById('texte_musique').innerHTML = 'lancer la musique';
+		query.style.transitionDuration = "0.4s";
+	}
+}
+
 	</script>
 </head>
 <body>
@@ -59,5 +80,10 @@ audioElement.volume = 0.1;
 			<p>Étant tous de grands amateurs de musique, nous voulions connaître les effets de notre consommation de musique sur notre corps et avons voulu partager nos recherches avec vous.</p>			
 		</article>
 	</section>
+
+	<div id="musique" onclick="swap_musique()">
+		<div id="play"></div>
+		<a href="#" id="texte_musique">lancer la musique</a>
+	</div>
 </body>
 </html>
