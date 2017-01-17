@@ -105,3 +105,15 @@ body
 {
 	font-family: 'Sanford';
 }
+
+footer
+{
+	background: url("../Images/Fond_footer.jpg");
+	margin-bottom: 0;
+}
+
+#margin_bas
+{
+	margin-bottom: 0;
+	margin: 0;
+}
