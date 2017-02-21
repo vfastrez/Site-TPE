@@ -31,4 +31,5 @@
 #Positionnement_carte
 {
 	display: flex;
+	justify-content: center;
 }
