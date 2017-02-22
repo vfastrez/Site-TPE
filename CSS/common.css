@@ -28,9 +28,17 @@ h1
 	animation: defile 10s infinite linear;
 }
 
+html
+{
+	height: 100%;
+	position: relative;
+
+}
+
 body
 {
 	margin: 0;
+	height: 100%;
 }
 
 .orga_nav
@@ -46,11 +54,12 @@ body
 	text-align: center;
 	line-height: 50px;
 	transition: background 0.5s, border-radius 0.5s, box-shadow 0.5s;
+	font-size: 1.2em;
 }
 
 .ext:hover
 {
-    background: #b5cbff;
+    background: #ffffff;
 	box-shadow: inset 0px 0px 21px 0px rgba(0,0,0,0.75);
 	border-radius: 5px;
 }
@@ -76,13 +85,13 @@ nav
 .div_bouton
 {
 	height: 100px;
-	background: #004aff;
+	background: #d5d5d5;
 	box-shadow: 0px 3px 7px black;
 }
 
 .en_cours
 {
-	background: #2e1fff;
+	background: #ffffff;
 	border-radius: 5px;
 	box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,0.75);
 	font-weight: bold;
@@ -109,5 +118,86 @@ body
 footer
 {
 	background: url("../Images/Fond_footer.jpg");
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 25px;
+	margin-top: 35px;
+	width: 100%;
+
 }
 
+#margin_bas
+{
+	margin-bottom: 0;
+}
+
+#play
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 0 10px 17.3px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+#pause
+{
+	width: 5px;
+	height: 17.3px;
+	position: relative;
+}
+
+#pause::before
+{
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 5px;
+	height: 17.3px;
+	left: -5px;
+	top: -1px;
+	content: "";
+}
+
+#pause::after
+{
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 5px;
+	height: 17.3px;
+	left: 5px;
+	top: -1px;
+	content: "";
+}
+
+
+#musique
+{
+	margin: 20px;
+	background-color: black;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 200px;
+	height: 30px;
+}
+
+#musique a
+{
+	color: white;
+}
+
+#musique:hover
+{
+	cursor: pointer;
+}
+
+#wrapper
+{
+	width: 100%;
+	height: 100%;
+}
