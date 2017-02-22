@@ -3,3 +3,23 @@ figure
 	display: flex;
 	justify-content: center;
 }
+
+.Position_Styles
+{
+	display: flex;
+	justify-content: center;
+	color: purple;
+	font-size: 20px;
+}
+
+p
+{
+	margin-left: 20px;
+	font-size: 17px
+}
+
+h3
+{
+	margin-left: 10px;
+	font-size: 22px
+}
