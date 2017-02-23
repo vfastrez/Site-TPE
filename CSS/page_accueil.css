@@ -6,7 +6,8 @@ body
 
 p
 {
-	font-size: 1.1em
+	font-size: 1.1em;
+	margin-bottom: 0;
 }
 
 @font-face
@@ -14,11 +15,6 @@ p
 	font-family: 'Sanford';
 	src: url('../Polices/Sanford/Sanford-0103_demo.ttf');
 	src: url('../Polices/Sanford/Sanford-0103_demo.woff');
-}
-
-*
-{
-	font-family: 'Sanford';
 }
 
 ol
@@ -42,67 +38,4 @@ article
 	margin-right: 125px;
 	width:220px;
 	height: 120px;
-}
-
-#play
-{
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 10px 0 10px 17.3px;
-	border-color: transparent transparent transparent #ffffff;
-}
-
-#pause
-{
-	width: 5px;
-	height: 17.3px;
-	position: relative;
-}
-
-#pause::before
-{
-	position: absolute;
-	display: block;
-	background-color: white;
-	width: 5px;
-	height: 17.3px;
-	left: -5px;
-	top: -1px;
-	content: "";
-}
-
-#pause::after
-{
-	position: absolute;
-	display: block;
-	background-color: white;
-	width: 5px;
-	height: 17.3px;
-	left: 5px;
-	top: -1px;
-	content: "";
-}
-
-
-#musique
-{
-	margin: 20px;
-	background-color: black;
-	border-radius: 10px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 200px;
-	height: 30px;
-}
-
-#musique a
-{
-	color: white;
-}
-
-#musique:hover
-{
-	cursor: pointer;
 }
