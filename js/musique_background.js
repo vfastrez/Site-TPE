@@ -1,5 +1,5 @@
 var audioElement = document.createElement('audio'), musique = 0;
-audioElement.setAttribute('src', '../Audio/Background.mp3');
+audioElement.setAttribute('src', 'Audio/Pham - Blackouts.mp3');
 audioElement.setAttribute('loop', '-1');
 audioElement.volume = 0.1;
 
