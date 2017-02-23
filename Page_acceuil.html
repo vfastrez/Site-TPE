@@ -5,93 +5,73 @@
 	<link rel="stylesheet" type="text/css" href="CSS/page_accueil.css">
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
 	<title>Site TPE</title>
-	<script type="text/javascript">
-var audioElement = document.createElement('audio'), musique = 0;
-audioElement.setAttribute('src', 'Audio/Pham - Blackouts.mp3');
-audioElement.setAttribute('loop', '-1');
-audioElement.volume = 0.1;
-
-function swap_musique() {
-	if(musique == 0) {
-		var query = document.getElementById('play');
-		query.id = "pause";
-		audioElement.play();
-		musique = 1;
-		document.getElementById('texte_musique').innerHTML = 'arrêter la musique';
-		query.style.transitionDuration = "0.4s";
-
-	}
-	else {
-		var query = document.getElementById('pause');
-		query.id = "play";
-		audioElement.pause();
-		musique = 0;
-		audioElement.currentTime=0;
-		document.getElementById('texte_musique').innerHTML = 'lancer la musique';
-		query.style.transitionDuration = "0.4s";
-	}
-}
-
-	</script>
+	
+	<script src="js/musique_background.js"></script>
 </head>
 <body>
-	<header>
-		<div id="en_tête">
-			<p id="noms">SLOMIANY, BIGOT, FASTREZ</p>
-			<h1>En quoi la musique influe-t-elle sur le corps humain ?</h1>
-		</div>
-	</header>
-	<nav>
-		<div>
-			<img src="images/clef_de_sol.png"; class="clef_de_sol">
-		</div>
-		<div class="div_bouton">
-			<div class="orga_nav">
-				<a href="HTML/Du_son_à_l'oreille.html"><div class="Boutons_nav ext">Du son à l'oreille</div></a>
-				<a href="HTML/étude_de_cas.html"><div class="Boutons_nav ext">Étude de cas</div></a>
-				<a href="HTML/Rencontre_pros.html"><div class="Boutons_nav ext">Rencontre Pros</div></a>
-				<a href="HTML/Conclusion.html"><div class="Boutons_nav ext">Conclusion</div></a>
+	<div id="wrapper">
+		<header>
+			<div id="en_tête">
+				<p id="noms">SLOMIANY, BIGOT, FASTREZ</p>
+				<h1>En quoi la musique influe-t-elle sur le corps humain ?</h1>
 			</div>
-			<div class="orga_nav">
-				<div class="Boutons_nav en_cours">Accueil</div>
-				<a href="HTML/Bibliographie.html"><div class="Boutons_nav ext">Bibliographie</div></a>
+		</header>
+		<nav>
+			<div>
+				<img src="images/clef_de_sol.png"; class="clef_de_sol">
 			</div>
-		</div>	
-		<div>
-			<img src="images/clef_de_sol.png"; class="clef_de_sol">
-		</div>
-	</nav>
-	<section>
-		<article>
-			<p>Dans le cadre de notre TPE, nous avons décidé de traiter le sujet "<strong>les effets de la musique sur le corps</strong>" en croisant les matières <em>Physique</em> et <em>Science de la vie</em>.</p>
-			<p>Nous serons tous daccord pour le dire, la musique est devenue quelque chose de quotidien dans nos vies à tous. Tout le monde en écoute mais quelles en sont les conséquences sur notre organisme ?</p>
-			<p>		Nous essayerons lors de notre TPE de répondre à cette question sous plusieurs axes :</p>
-		</article>
-		<article id="organisation_image">
-			<ol>
-				<strong><li>Du son à l'oreille</li>
-				<li>Étude de cas</li>
-				<li>Rencontre pros</li>
-				<li>Conclusion</li></strong>
-			</ol>
-			<img src="Images/image_acceuil.jpg" id="margin_image">
-		</article>
-		<article>
-			<p>Étant tous de grands amateurs de musique, nous voulions connaître les effets de notre consommation de musique sur notre corps et avons voulu partager nos recherches avec vous.</p>			
-		</article>
-	</section>
-
-	<div id="musique" onclick="swap_musique()">
-		<div id="play"></div>
-		<a href="#" id="texte_musique">lancer la musique</a>
+			<div class="div_bouton">
+				<div class="orga_nav">
+					<a href="HTML/Du_son_à_l'oreille.html"><div class="Boutons_nav ext">Du son à l'oreille</div></a>
+					<a href="HTML/étude_de_cas.html"><div class="Boutons_nav ext">Étude de cas</div></a>
+					<a href="HTML/Rencontre_pros.html"><div class="Boutons_nav ext">Rencontre Pros</div></a>
+					<a href="HTML/Conclusion.html"><div class="Boutons_nav ext">Conclusion</div></a>
+				</div>
+				<div class="orga_nav">
+					<div class="Boutons_nav en_cours">Accueil</div>
+					<a href="HTML/Bibliographie.html"><div class="Boutons_nav ext">Bibliographie</div></a>
+				</div>
+			</div>	
+			<div>
+				<img src="images/clef_de_sol.png"; class="clef_de_sol">
+			</div>
+		</nav>
+		<section>
+			<article>
+				<p>Dans le cadre de notre TPE, nous avons décidé de traiter le sujet "<strong>les effets de la musique sur le corps</strong>" en croisant les matières <em>Physique</em> et <em>Science de la vie</em>.</p>
+				<p>Nous serons tous daccord pour le dire, la musique est devenue quelque chose de quotidien dans nos vies à tous. Tout le monde en écoute mais quelles en sont les conséquences sur notre organisme ?</p>
+				<p>		Nous essayerons lors de notre TPE de répondre à cette question sous plusieurs axes :</p>
+			</article>
+			<article id="organisation_image">
+				<ol>
+					<strong><li>Du son à l'oreille</li>
+					<li>Étude de cas</li>
+					<li>Rencontre pros</li>
+					<li>Conclusion</li></strong>
+				</ol>
+				<img src="Images/image_acceuil.jpg" id="margin_image">
+			</article>
+			<article>
+				<p>Étant tous de grands amateurs de musique, nous voulions connaître les effets de notre consommation de musique sur notre corps et avons voulu partager nos recherches avec vous.</p>			
+			</article>
+		</section>
 	</div>
+
 	<footer>
-		<p>Ce site à été entièrement codé par nos soins. Nous nous sommes servis des logiciels suivants : </p>
-			<ul>
+		<div id="footer_right">
+			<p>Ce site à été entièrement codé par nos soins. Nous nous sommes servis des logiciels suivants : </p>
+			<ul id="margin_bas">
 				<li>Sublime Text</li>
 				<li>GitHub</li>
 				<li>GIMP</li>
 			</ul>
+		</div>
+		<div id="footer_left">
+			<div id="musique" onclick="swap_musique()">
+				<div id="play"></div>
+				<a href="#" id="texte_musique">lancer la musique</a>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>

@@ -4,35 +4,54 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../CSS/common.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/Conclusion.css">
+	<script src="../js/musique_background.js"></script>
 	<title>Conclusion</title>
 </head>
 <body>
-	<header>
-		<div id="en_tête">
-			<p id="noms">SLOMIANY, BIGOT, FASTREZ</p>
-			<h1>En quoi la musique influe-t-elle sur le corps humain ?</h1>
-		</div>
-	<nav>
-	<div>
-		<img src="../images/clef_de_sol.png"; class="clef_de_sol">
+	<div id="wrapper">	
+		<header>
+			<div id="en_tête">
+				<p id="noms">SLOMIANY, BIGOT, FASTREZ</p>
+				<h1>En quoi la musique influe-t-elle sur le corps humain ?</h1>
+			</div>
+		</header>
+		<nav>
+			<div>
+				<img src="../images/clef_de_sol.png"; class="clef_de_sol">
+			</div>
+			<div class="div_bouton">
+				<div class="orga_nav">
+					<a href="Du_son_à_l'oreille.html"><div class="Boutons_nav ext">Du son à l'oreille</div></a>
+					<a href="étude_de_cas.html"><div class="Boutons_nav ext">Étude de cas</div></a>
+					<a href="Rencontre_pros.html"><div class="Boutons_nav ext">Rencontre Pros</div></a>
+					<a href="Conclusion.html"><div class="Boutons_nav en_cours">Conclusion</div></a>
+				</div>
+				<div class="orga_nav">
+					<a href="Page_acceuil.html"><div class="Boutons_nav ext">Accueil</div></a>
+					<a href="Bibliographie.html"><div class="Boutons_nav ext">Bibliographie</div></a>
+				</div>
+			</div>	
+			<div>
+				<img src="../images/clef_de_sol.png"; class="clef_de_sol">
+			</div>
+		</nav>
 	</div>
-	<div class="div_bouton">
-		<div class="orga_nav">
-			<a href="Du_son_à_l'oreille.html"><div class="Boutons_nav ext">Du son à l'oreille</div></a>
-			<a href="étude_de_cas.html"><div class="Boutons_nav ext">Étude de cas</div></a>
-			<a href="Rencontre_pros.html"><div class="Boutons_nav ext">Rencontre Pros</div></a>
-			<div class="Boutons_nav en_cours">Conclusion</div>
+	<footer>
+		<div id="footer_right">
+			<p>Ce site à été entièrement codé par nos soins. Nous nous sommes servis des logiciels suivants : </p>
+			<ul id="margin_bas">
+				<li>Sublime Text</li>
+				<li>GitHub</li>
+				<li>GIMP</li>
+			</ul>
 		</div>
-		<div class="orga_nav">
-			<a href="../Page_acceuil.html"><div class="Boutons_nav ext">Accueil</div></a>
-			<a href="Bibliographie.html"><div class="Boutons_nav ext">Bibliographie</div></a>
+		<div id="footer_left">
+			<div id="musique" onclick="swap_musique()">
+				<div id="play"></div>
+				<a href="#" id="texte_musique">lancer la musique</a>
+			</div>
 		</div>
-	</div>	
-	<div>
-		<img src="../images/clef_de_sol.png"; class="clef_de_sol">
-	</div>
-	</nav>
-	</header>
+	</footer>
 
 </body>
 </html>
