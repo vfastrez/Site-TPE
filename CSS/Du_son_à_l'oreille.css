@@ -277,10 +277,10 @@
 	width: 400%;
 	height: 310px;
 	/* multiple background */
-	background: url(../Images/dummy-640x310-1.jpg) 0 0 no-repeat,
-	            url(../Images/dummy-640x310-2.jpg) 640px 0 no-repeat,
-	            url(../Images/dummy-640x310-3.jpg) 1280px 0 no-repeat,
-	            url(../Images/dummy-640x310-4.jpg) 1920px 0 no-repeat;
+	background: url(../Images/Rythme.jpg) 0 0 no-repeat,
+	            url(../Images/Melodie.jpg) 640px 0 no-repeat,
+	            url(../Images/harmonie.jpg) 1280px 0 no-repeat,
+	            url(../Images/Période.png) 1920px 0 no-repeat;
 	transition: background 1s;
 }
 
