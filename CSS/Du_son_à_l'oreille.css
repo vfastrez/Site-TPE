@@ -26,11 +26,11 @@
 }
 #slideshow:before {
 	left:0;
-	transform: rotate(-4deg);
+	transform: rotate(-8deg);
 }
 #slideshow:after {
 	right:0;
-	transform: rotate(4deg);
+	transform: rotate(8deg);
 }
 
 /* gestion des dimensions et débordement du conteneur */
@@ -57,7 +57,7 @@
 #slideshow .slider {
 	position: absolute;
 	left:0; top:0;
-	width: 400%;
+	width: 800%;
 	height: 310px;
 }
 
@@ -274,13 +274,17 @@
 #slideshow .c_slider {
 	position: absolute;
 	left:0; top:0;
-	width: 400%;
+	width: 800%;
 	height: 310px;
 	/* multiple background */
 	background: url(../Images/Rythme.jpg) 0 0 no-repeat,
 	            url(../Images/Melodie.jpg) 640px 0 no-repeat,
 	            url(../Images/harmonie.jpg) 1280px 0 no-repeat,
-	            url(../Images/Période.png) 1920px 0 no-repeat;
+	            url(../Images/Période.png) 1920px 0 no-repeat,
+	            url(../Images/Son.png) 2560px 0 no-repeat,
+	            url(../Images/hauteur.gif) 3200px 0 no-repeat,
+	            url(../Images/intensité.jpg) 3840px 0 no-repeat,
+	            url(../Images/Timbre.jpg) 4480px 0 no-repeat;
 	transition: background 1s;
 }
 
@@ -297,27 +301,47 @@
 /* on affiche seulement deux flèches */
 #sl_i1:target ~ #slideshow .commands1								{ display: block; }
 /* correspond au décalage des images */
-#sl_i1:target ~ #slideshow .c_slider								{ background-position: 0 0, 640px 0, 1280px 0, 1920px 0; }
+#sl_i1:target ~ #slideshow .c_slider								{ background-position: 0 0, 640px 0, 1280px 0, 1920px 0, 2560px, 3200px, 3840px, 4480px; }
 /* on place la pastille tout à gauche */
 #sl_i1:target ~ #slideshow .dots_commands li:first-child a:before	{ left:0; }
  
 /* même procédé lorsqu'on cible le second slide */
 #sl_i2:target ~ #slideshow .commands								{ display: none; }
 #sl_i2:target ~ #slideshow .commands2								{ display: block; }
-#sl_i2:target ~ #slideshow .c_slider								{ background-position: -640px 0, 0 0, 640px 0, 1280px 0; }
+#sl_i2:target ~ #slideshow .c_slider								{ background-position: -640px 0, 0 0, 640px 0, 1280px 0, 1920px, 2560px, 3200px, 3840px; }
 #sl_i2:target ~ #slideshow .dots_commands li:first-child a:before	{ left:18px; }
  
 /* puis le 3ème */
 #sl_i3:target ~ #slideshow .commands								{ display: none; }
 #sl_i3:target ~ #slideshow .commands3								{ display: block; }
-#sl_i3:target ~ #slideshow .c_slider								{ background-position: -1280px 0, -640px 0, 0 0, 640px 0; }
+#sl_i3:target ~ #slideshow .c_slider								{ background-position: -1280px 0, -640px 0, 0 0, 640px 0, 1280px, 1920px, 2560px, 3200px; }
 #sl_i3:target ~ #slideshow .dots_commands li:first-child a:before	{ left:36px; }
  
 /* et enfin le 4ème */
 #sl_i4:target ~ #slideshow .commands								{ display: none; }
 #sl_i4:target ~ #slideshow .commands4								{ display: block; }
-#sl_i4:target ~ #slideshow .c_slider								{ background-position: -1920px 0, -1280px 0, -640px 0, 0 0; }
+#sl_i4:target ~ #slideshow .c_slider								{ background-position: -1920px 0, -1280px 0, -640px 0, 0 0, 640px, 1280px, 1920px, 2560px; }
 #sl_i4:target ~ #slideshow .dots_commands li:first-child a:before	{ left:54px; }
+
+#sl_i5:target ~ #slideshow .commands								{ display: none; }
+#sl_i5:target ~ #slideshow .commands5								{ display: block; }
+#sl_i5:target ~ #slideshow .c_slider								{ background-position: -2560px 0, -1920px 0, -1280px 0, -640px 0, 0 0, 640px, 1280px, 1920px; }
+#sl_i5:target ~ #slideshow .dots_commands li:first-child a:before	{ left:72px; }
+
+#sl_i6:target ~ #slideshow .commands								{ display: none; }
+#sl_i6:target ~ #slideshow .commands6								{ display: block; }
+#sl_i6:target ~ #slideshow .c_slider								{ background-position: -3200px 0, -2560px 0, -1920px 0, -1280px 0, -640px 0, 0 0, 640px, 1280px; }
+#sl_i6:target ~ #slideshow .dots_commands li:first-child a:before	{ left:90px; }
+
+#sl_i7:target ~ #slideshow .commands								{ display: none; }
+#sl_i7:target ~ #slideshow .commands7								{ display: block; }
+#sl_i7:target ~ #slideshow .c_slider								{ background-position: -3840px 0, -3200px 0, -2560px 0, -1920px 0, -1280px 0, -640px 0, 0 0, 640px; }
+#sl_i7:target ~ #slideshow .dots_commands li:first-child a:before	{ left:108px; }
+
+#sl_i8:target ~ #slideshow .commands								{ display: none; }
+#sl_i8:target ~ #slideshow .commands8								{ display: block; }
+#sl_i8:target ~ #slideshow .c_slider								{ background-position: -4480px 0, -3840px 0, -3200px 0, -2560px 0, -1920px 0, -1280px 0, -640px 0, 0 0; }
+#sl_i8:target ~ #slideshow .dots_commands li:first-child a:before	{ left:126px; }
 
 .dots_commands  {
 	padding:0;
