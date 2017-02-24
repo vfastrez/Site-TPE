@@ -172,29 +172,6 @@ footer
 	content: "";
 }
 
-
-#musique
-{
-	margin: 20px;
-	background-color: black;
-	border-radius: 10px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 200px;
-	height: 30px;
-}
-
-#musique a
-{
-	color: white;
-}
-
-#musique:hover
-{
-	cursor: pointer;
-}
-
 #wrapper
 {
 	width: 100%;
