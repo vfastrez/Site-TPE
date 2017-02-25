@@ -408,68 +408,128 @@
 @-webkit-keyframes dotser {
 	0%, 100% 	{ opacity: 1; left: 0; 		}
  		
-	20%			{ opacity: 1; left: 0;		}
-	22%			{ opacity: 0; left: 0;		}
-	23%			{ opacity: 0; left: 18px;	}
-	25%			{ opacity: 1; left: 18px;	}
+	10%			{ opacity: 1; left: 0;		}
+	11%			{ opacity: 0; left: 0;		}
+	11.5%		{ opacity: 0; left: 18px;	}
+	12.5%		{ opacity: 1; left: 18px;	}
+
+	22.5%		{ opacity: 1; left: 18px;		}
+	23.5%		{ opacity: 0; left: 18px;		}
+	24%			{ opacity: 0; left: 36px;	}
+	25%			{ opacity: 1; left: 36px;	}
  		
-	45%			{ opacity: 1; left: 18px;	}
-	47%			{ opacity: 0; left: 18px;	}
-	48%			{ opacity: 0; left: 36px;	}
-	50%			{ opacity: 1; left: 36px;	}
+	35%			{ opacity: 1; left: 36px;	}
+	36%			{ opacity: 0; left: 36px;	}
+	36.5%		{ opacity: 0; left: 54px;	}
+	37.5%		{ opacity: 1; left: 54px;	}
+
+	47.5%		{ opacity: 1; left: 54px;	}
+	48.5%		{ opacity: 0; left: 54px;	}
+	49%			{ opacity: 0; left: 72px;	}
+	50%			{ opacity: 1; left: 72px;	}
  		
-	70%			{ opacity: 1; left: 36px;	}
-	72%			{ opacity: 0; left: 36px;	}
-	73%			{ opacity: 0; left: 54px;	}
-	75%			{ opacity: 1; left: 54px;	}
+	60%			{ opacity: 1; left: 72px;	}
+	61%			{ opacity: 0; left: 72px;	}
+	61.5%		{ opacity: 0; left: 90px;	}
+	62.5%		{ opacity: 1; left: 90px;	}
+
+	72.5%		{ opacity: 1; left: 90px;	}
+	73.5%		{ opacity: 0; left: 90px;	}
+	74%			{ opacity: 0; left: 108px;	}
+	75%			{ opacity: 1; left: 108px;	}
+
+	85%			{ opacity: 1; left: 108px;	}
+	86%			{ opacity: 0; left: 108px;	}
+	86.5%		{ opacity: 0; left: 126px;	}
+	87.5%		{ opacity: 1; left: 126px;	}
  		
-	95%			{ opacity: 1; left: 54px;	}
-	97%			{ opacity: 0; left: 54px;	}
-	98%			{ opacity: 0; left: 0;	}
+	97.5%		{ opacity: 1; left: 126px;	}
+	98.5%		{ opacity: 0; left: 126px;	}
+	99%			{ opacity: 0; left: 0;	}
 }
 
 @-moz-keyframes dotser {
 	0%, 100% 	{ opacity: 1; left: 0; 		}
  		
-	20%			{ opacity: 1; left: 0;		}
-	22%			{ opacity: 0; left: 0;		}
-	23%			{ opacity: 0; left: 18px;	}
-	25%			{ opacity: 1; left: 18px;	}
+	10%			{ opacity: 1; left: 0;		}
+	11%			{ opacity: 0; left: 0;		}
+	11.5%		{ opacity: 0; left: 18px;	}
+	12.5%		{ opacity: 1; left: 18px;	}
+
+	22.5%		{ opacity: 1; left: 18px;		}
+	23.5%		{ opacity: 0; left: 18px;		}
+	24%			{ opacity: 0; left: 36px;	}
+	25%			{ opacity: 1; left: 36px;	}
  		
-	45%			{ opacity: 1; left: 18px;	}
-	47%			{ opacity: 0; left: 18px;	}
-	48%			{ opacity: 0; left: 36px;	}
-	50%			{ opacity: 1; left: 36px;	}
+	35%			{ opacity: 1; left: 36px;	}
+	36%			{ opacity: 0; left: 36px;	}
+	36.5%		{ opacity: 0; left: 54px;	}
+	37.5%		{ opacity: 1; left: 54px;	}
+
+	47.5%		{ opacity: 1; left: 54px;	}
+	48.5%		{ opacity: 0; left: 54px;	}
+	49%			{ opacity: 0; left: 72px;	}
+	50%			{ opacity: 1; left: 72px;	}
  		
-	70%			{ opacity: 1; left: 36px;	}
-	72%			{ opacity: 0; left: 36px;	}
-	73%			{ opacity: 0; left: 54px;	}
-	75%			{ opacity: 1; left: 54px;	}
+	60%			{ opacity: 1; left: 72px;	}
+	61%			{ opacity: 0; left: 72px;	}
+	61.5%		{ opacity: 0; left: 90px;	}
+	62.5%		{ opacity: 1; left: 90px;	}
+
+	72.5%		{ opacity: 1; left: 90px;	}
+	73.5%		{ opacity: 0; left: 90px;	}
+	74%			{ opacity: 0; left: 108px;	}
+	75%			{ opacity: 1; left: 108px;	}
+
+	85%			{ opacity: 1; left: 108px;	}
+	86%			{ opacity: 0; left: 108px;	}
+	86.5%		{ opacity: 0; left: 126px;	}
+	87.5%		{ opacity: 1; left: 126px;	}
  		
-	95%			{ opacity: 1; left: 54px;	}
-	97%			{ opacity: 0; left: 54px;	}
-	98%			{ opacity: 0; left: 0;	}
+	97.5%		{ opacity: 1; left: 126px;	}
+	98.5%		{ opacity: 0; left: 126px;	}
+	99%			{ opacity: 0; left: 0;	}
 }
 
 @-o-keyframes dotser {
 	0%, 100% 	{ opacity: 1; left: 0; 		}
  		
-	20%			{ opacity: 1; left: 0;		}
-	22%			{ opacity: 0; left: 0;		}
-	23%			{ opacity: 0; left: 18px;	}
-	25%			{ opacity: 1; left: 18px;	}
+	10%			{ opacity: 1; left: 0;		}
+	11%			{ opacity: 0; left: 0;		}
+	11.5%		{ opacity: 0; left: 18px;	}
+	12.5%		{ opacity: 1; left: 18px;	}
+
+	22.5%		{ opacity: 1; left: 18px;		}
+	23.5%		{ opacity: 0; left: 18px;		}
+	24%			{ opacity: 0; left: 36px;	}
+	25%			{ opacity: 1; left: 36px;	}
  		
-	45%			{ opacity: 1; left: 18px;	}
-	47%			{ opacity: 0; left: 18px;	}
-	48%			{ opacity: 0; left: 36px;	}
-	50%			{ opacity: 1; left: 36px;	}
+	35%			{ opacity: 1; left: 36px;	}
+	36%			{ opacity: 0; left: 36px;	}
+	36.5%		{ opacity: 0; left: 54px;	}
+	37.5%		{ opacity: 1; left: 54px;	}
+
+	47.5%		{ opacity: 1; left: 54px;	}
+	48.5%		{ opacity: 0; left: 54px;	}
+	49%			{ opacity: 0; left: 72px;	}
+	50%			{ opacity: 1; left: 72px;	}
  		
-	70%			{ opacity: 1; left: 36px;	}
-	72%			{ opacity: 0; left: 36px;	}
-	73%			{ opacity: 0; left: 54px;	}
-	75%			{ opacity: 1; left: 54px;	}
+	60%			{ opacity: 1; left: 72px;	}
+	61%			{ opacity: 0; left: 72px;	}
+	61.5%		{ opacity: 0; left: 90px;	}
+	62.5%		{ opacity: 1; left: 90px;	}
+
+	72.5%		{ opacity: 1; left: 90px;	}
+	73.5%		{ opacity: 0; left: 90px;	}
+	74%			{ opacity: 0; left: 108px;	}
+	75%			{ opacity: 1; left: 108px;	}
+
+	85%			{ opacity: 1; left: 108px;	}
+	86%			{ opacity: 0; left: 108px;	}
+	86.5%		{ opacity: 0; left: 126px;	}
+	87.5%		{ opacity: 1; left: 126px;	}
  		
-	95%			{ opacity: 1; left: 54px;	}
-	97%			{ opacity: 0; left: 54px;	}
-	98%			{ opacity: 0; left: 0;	}
+	97.5%		{ opacity: 1; left: 126px;	}
+	98.5%		{ opacity: 0; left: 126px;	}
+	99%			{ opacity: 0; left: 0;	}
 }
