@@ -133,7 +133,7 @@
 /* complétez le sélecteur : */
 #slideshow .slider {
 	/* ... avec la propriété animation */
-	animation: slider 60s infinite;
+	animation: slider 120s infinite;
 }
 
 #timeline {
@@ -146,7 +146,7 @@
 	background: rgba(214,98,13,.8);
 	width: 0;
 	/* fonction d'animation */
-	animation: timeliner 60s infinite;
+	animation: timeliner 120s infinite;
 }
 
 @-webkit-keyframes timeliner {
@@ -182,7 +182,7 @@
 /* ajouter à l'élément : */
 #slideshow figcaption {
 	/* ... la propriété animation */
-	animation: figcaptionner 60s infinite;
+	animation: figcaptionner 120s infinite;
 }
 
 .play_commands {
@@ -289,18 +289,20 @@
 	width: 800%;
 	height: 310px;
 	/* multiple background */
-	background: url(../Images/Rythme.jpg) 0 0 no-repeat,
-	            url(../Images/Melodie.jpg) 640px 0 no-repeat,
-	            url(../Images/harmonie.jpg) 1280px 0 no-repeat,
-	            url(../Images/Période.png) 1920px 0 no-repeat,
-	            url(../Images/Son.png) 2560px 0 no-repeat,
-	            url(../Images/hauteur.gif) 3200px 0 no-repeat,
-	            url(../Images/intensité.jpg) 3840px 0 no-repeat,
-	            url(../Images/Timbre.jpg) 4480px 0 no-repeat;
+	background: url(../Images/Rythme2.jpg) 0 0 no-repeat,
+	            url(../Images/Melodie2.jpg) 640px 0 no-repeat,
+	            url(../Images/harmonie2.jpg) 1280px 0 no-repeat,
+	            url(../Images/Période2.jpg) 1920px 0 no-repeat,
+	            url(../Images/Son2.jpg) 2560px 0 no-repeat,
+	            url(../Images/hauteur2.jpg) 3200px 0 no-repeat,
+	            url(../Images/intensité2.jpg) 3840px 0 no-repeat,
+	            url(../Images/Timbre2.jpg) 4480px 0 no-repeat;
 	transition: background 1s;
 }
 
 
+/* on cache le slider */
+.sl_i:target ~ #slideshow .slider                                    { visibility: hidden }
 /* on planque la 1ère pastille (cf. bonux suivant) */
 .sl_i:target ~ #slideshow .dots_commands li:first-child a:after		{ display:none; }
 /* pour afficher la 2ème pastille (cf. bonux suivant) */
@@ -399,7 +401,7 @@
 }
 /* on anime "after" */
 .dots_commands li:first-child a:after {
-	animation: dotser 60s infinite;
+	animation: dotser 120s infinite;
 }
 /* on cache "before", on l'utilise uniquement au clic (cf. bonux précédent) */
 .dots_commands li:first-child a:before { display:none; }
