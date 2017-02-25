@@ -96,26 +96,38 @@
 
 /* fonction d'animation, n'oubliez pas de prefixer ! */
 @-webkit-keyframes slider {
-	0%, 20%, 100%	{ left: 0 }
-	25%, 45%		{ left: -100% }
-	50%, 70%		{ left: -200% }
-	75%, 95%		{ left: -300% }
+	0%, 10%, 100%		{ left: 0 }
+	12.5%, 22.5%		{ left: -100% }
+	25%, 35%			{ left: -200% }
+	37.5%, 47.5%		{ left: -300% }
+	50%, 60%			{ left: -400% }
+	62.5%, 72.5%		{ left: -500% }
+	75%, 85%			{ left: -600% }
+	87.5%, 97.5%		{ left: -700% }
 }
 
 /* fonction d'animation, n'oubliez pas de prefixer ! */
 @-moz-keyframes slider {
-	0%, 20%, 100%	{ left: 0 }
-	25%, 45%		{ left: -100% }
-	50%, 70%		{ left: -200% }
-	75%, 95%		{ left: -300% }
+	0%, 10%, 100%		{ left: 0 }
+	12.5%, 22.5%		{ left: -100% }
+	25%, 35%			{ left: -200% }
+	37.5%, 47.5%		{ left: -300% }
+	50%, 60%			{ left: -400% }
+	62.5%, 72.5%		{ left: -500% }
+	75%, 85%			{ left: -600% }
+	87.5%, 97.5%		{ left: -700% }
 }
 
 /* fonction d'animation, n'oubliez pas de prefixer ! */
 @-o-keyframes slider {
-	0%, 20%, 100%	{ left: 0 }
-	25%, 45%		{ left: -100% }
-	50%, 70%		{ left: -200% }
-	75%, 95%		{ left: -300% }
+	0%, 10%, 100%		{ left: 0 }
+	12.5%, 22.5%		{ left: -100% }
+	25%, 35%			{ left: -200% }
+	37.5%, 47.5%		{ left: -300% }
+	50%, 60%			{ left: -400% }
+	62.5%, 72.5%		{ left: -500% }
+	75%, 85%			{ left: -600% }
+	87.5%, 97.5%		{ left: -700% }
 }
 
 /* complétez le sélecteur : */
@@ -138,33 +150,33 @@
 }
 
 @-webkit-keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
+	0%, 12.5%, 25%, 37.5%, 50%, 62.5%, 75%, 87.5%, 100%		{ width: 0;		}
+	10%, 22.5%, 35%, 47.5%, 60%, 72.5%, 85%, 97.5%			{ width: 640px;	}
 }
 
 @-moz-keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
+	0%, 12.5%, 25%, 37.5%, 50%, 62.5%, 75%, 87.5%, 100%		{ width: 0;		}
+	10%, 22.5%, 35%, 47.5%, 60%, 72.5%, 85%, 97.5%			{ width: 640px;	}
 }
 
 @-o-keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
+	0%, 12.5%, 25%, 37.5%, 50%, 62.5%, 75%, 87.5%, 100%		{ width: 0;		}
+	10%, 22.5%, 35%, 47.5%, 60%, 72.5%, 85%, 97.5%			{ width: 640px;	}
 }
 
 @-webkit-keyframes figcaptionner {
-	0%, 25%, 50%, 75%, 100%						{ bottom: -300px;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
+	0%, 12.5%, 25%, 37.5%, 50%, 62.5%, 75%, 87.5%, 100%													{ bottom: -300px;	}
+	2.5%, 10%, 15%, 22.5%, 27.5%, 35%, 40%, 47.5%, 52.5%, 60%, 65%, 72.5%, 77.5%, 85%, 90%, 97.5%		{ bottom: 5px;		}
 }
 
 @-moz-keyframes figcaptionner {
-	0%, 25%, 50%, 75%, 100%						{ bottom: -300px;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
+	0%, 12.5%, 25%, 37.5%, 50%, 62.5%, 75%, 87.5%, 100%													{ bottom: -300px;	}
+	2.5%, 10%, 15%, 22.5%, 27.5%, 35%, 40%, 47.5%, 52.5%, 60%, 65%, 72.5%, 77.5%, 85%, 90%, 97.5%		{ bottom: 5px;		}
 }
 
 @-o-keyframes figcaptionner {
-	0%, 25%, 50%, 75%, 100%						{ bottom: -300px;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
+	0%, 12.5%, 25%, 37.5%, 50%, 62.5%, 75%, 87.5%, 100%													{ bottom: -300px;	}
+	2.5%, 10%, 15%, 22.5%, 27.5%, 35%, 40%, 47.5%, 52.5%, 60%, 65%, 72.5%, 77.5%, 85%, 90%, 97.5%		{ bottom: 5px;		}
 }
 
 /* ajouter à l'élément : */
@@ -288,8 +300,7 @@
 	transition: background 1s;
 }
 
-/* on cache le slider */
-.sl_i:target ~ #slideshow .slider									{ visibility: hidden }
+
 /* on planque la 1ère pastille (cf. bonux suivant) */
 .sl_i:target ~ #slideshow .dots_commands li:first-child a:after		{ display:none; }
 /* pour afficher la 2ème pastille (cf. bonux suivant) */
@@ -304,12 +315,14 @@
 #sl_i1:target ~ #slideshow .c_slider								{ background-position: 0 0, 640px 0, 1280px 0, 1920px 0, 2560px, 3200px, 3840px, 4480px; }
 /* on place la pastille tout à gauche */
 #sl_i1:target ~ #slideshow .dots_commands li:first-child a:before	{ left:0; }
+#sl_i1:target ~ #slideshow .slider									{ left:0; }
  
 /* même procédé lorsqu'on cible le second slide */
 #sl_i2:target ~ #slideshow .commands								{ display: none; }
 #sl_i2:target ~ #slideshow .commands2								{ display: block; }
 #sl_i2:target ~ #slideshow .c_slider								{ background-position: -640px 0, 0 0, 640px 0, 1280px 0, 1920px, 2560px, 3200px, 3840px; }
 #sl_i2:target ~ #slideshow .dots_commands li:first-child a:before	{ left:18px; }
+#sl_i2:target ~ #slideshow .slider									{ left: -100%; }
  
 /* puis le 3ème */
 #sl_i3:target ~ #slideshow .commands								{ display: none; }
