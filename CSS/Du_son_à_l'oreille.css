@@ -535,3 +535,8 @@
 	98.5%		{ opacity: 0; left: 126px;	}
 	99%			{ opacity: 0; left: 0;	}
 }
+
+p, li
+{
+	margin-left: 15px
+}
