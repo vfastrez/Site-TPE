@@ -39,3 +39,9 @@ article
 	width:220px;
 	height: 120px;
 }
+
+.lien
+{
+	color: blue;
+	text-decoration: underline;
+}

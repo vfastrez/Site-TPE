@@ -133,7 +133,7 @@
 /* complétez le sélecteur : */
 #slideshow .slider {
 	/* ... avec la propriété animation */
-	animation: slider 120s infinite;
+	animation: slider 180s infinite;
 }
 
 #timeline {
@@ -146,7 +146,7 @@
 	background: rgba(214,98,13,.8);
 	width: 0;
 	/* fonction d'animation */
-	animation: timeliner 120s infinite;
+	animation: timeliner 180s infinite;
 }
 
 @-webkit-keyframes timeliner {
@@ -182,7 +182,7 @@
 /* ajouter à l'élément : */
 #slideshow figcaption {
 	/* ... la propriété animation */
-	animation: figcaptionner 120s infinite;
+	animation: figcaptionner 180s infinite;
 }
 
 .play_commands {
@@ -401,7 +401,7 @@
 }
 /* on anime "after" */
 .dots_commands li:first-child a:after {
-	animation: dotser 120s infinite;
+	animation: dotser 180s infinite;
 }
 /* on cache "before", on l'utilise uniquement au clic (cf. bonux précédent) */
 .dots_commands li:first-child a:before { display:none; }
